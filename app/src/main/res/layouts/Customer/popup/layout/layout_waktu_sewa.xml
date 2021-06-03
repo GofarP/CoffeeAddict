@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Tanggal:"
+            android:textColor="@android:color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+
+        <Spinner
+            android:id="@+id/spntanggalmeja"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            style="@style/spinner_style"
+            android:layout_below="@+id/status"
+            android:layout_height="?attr/dropdownListPreferredItemHeight"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bulan:"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            >
+
+        </TextView>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/spnbulanmeja"
+            android:layout_marginTop="5dp"
+            style="@style/spinner_style"
+            android:layout_below="@+id/status"
+            android:layout_height="?attr/dropdownListPreferredItemHeight"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnsewameja"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Pesan Meja"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@color/whiteTextColor"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

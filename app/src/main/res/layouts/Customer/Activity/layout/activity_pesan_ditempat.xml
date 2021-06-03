@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Customer.PesanDitempatActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:queryHint="Cari nama menu"
+        android:background="@drawable/et_style"
+        >
+
+    </androidx.appcompat.widget.SearchView>
+
+    <Spinner
+        android:id="@+id/spnkategorimenu"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:layout_below="@+id/svmenu"
+        android:layout_marginTop="23dp"
+        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+        >
+
+    </Spinner>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvallmenu"
+        android:layout_below="@+id/spnkategorimenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

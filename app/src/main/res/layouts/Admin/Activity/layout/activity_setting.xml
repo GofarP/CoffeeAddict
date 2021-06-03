@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Admin.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/defaults"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/namamenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Edit Username Admin"
+                        android:textColor="@color/defaults"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/namamenu"
+                        android:layout_marginTop="20dp"
+                        android:text="USername Admin:"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txteditusernameadmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/nama"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan username baru"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btneditusernameadmin"
+                        android:layout_below="@+id/txteditusernameadmin"
+                        android:layout_marginTop="10dp"
+                        android:text="Ganti username"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/defaults"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/editpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Edit Password Admin"
+                        android:textColor="@color/defaults"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editpassword"
+                        android:layout_marginTop="20dp"
+                        android:text="Masukkan password baru"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txteditpassaddmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/pass"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan Passwor Baru"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/konfirmpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txteditpassaddmin"
+                        android:layout_marginTop="20dp"
+                        android:text="Konfirmasi password baru:"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txtconfirmeditpassadmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/konfirmpass"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:hint="Konfirmasi Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btneditpasswordadmin"
+                        android:layout_below="@+id/txtconfirmeditpassadmin"
+                        android:layout_marginTop="10dp"
+                        android:text="Ganti Password"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/defaults"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tambahadmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tambah admin baru"
+                        android:textColor="@color/defaults"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/newadminusername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tambahadmin"
+                        android:layout_marginTop="20dp"
+                        android:text="Masukkan Username Admin baru"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txtnewuseradmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/newadminusername"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan Username Admin Baru"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/newuserpassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtnewuseradmin"
+                        android:text="Masukkan Password Admin Baru"
+                        android:textColor="@color/defaults"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17sp"
+                        ></TextView>
+
+                    <EditText
+                        android:id="@+id/txtnewpasswordadmin"
+                        android:layout_below="@+id/newuserpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="textPassword"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan Username Admin Baru"
+                        android:textSize="16sp"
+                        >
+
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/newuserconfirmpassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtnewpasswordadmin"
+                        android:text="Konfirmasi Password Admin Baru"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/defaults"
+                        ></TextView>
+
+                    <EditText
+                        android:id="@+id/txtnewconfirmpasswordadmin"
+                        android:layout_below="@+id/newuserconfirmpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="textPassword"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan Username Admin Baru"
+                        android:textSize="16sp"
+                        >
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btntambahadmin"
+                        android:layout_below="@+id/txtnewconfirmpasswordadmin"
+                        android:layout_marginTop="10dp"
+                        android:text="Tambah Admin"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/defaults"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tutuptoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tutup Toko"
+                        android:textColor="@color/defaults"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/statustoko"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tutuptoko"
+                        android:layout_marginTop="20dp"
+                        android:text="Status Toko:"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblstatustoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/statustoko"
+                        android:layout_marginTop="5dp"
+                        android:text="status"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btntutuptoko"
+                        android:layout_below="@+id/lblstatustoko"
+                        android:layout_marginTop="10dp"
+                        android:text="Tutup Toko"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

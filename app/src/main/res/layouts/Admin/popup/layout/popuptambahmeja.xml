@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/defaults"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tambah/Edit meja"
+            android:textColor="#ffffff"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:id="@+id/txttambahmeja"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_style"
+        android:hint="Masukkan Nomor Meja "
+        android:inputType="number">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtjenismeja"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/et_style"
+        android:hint="Masukkan Jenis Meja"
+        android:layout_below="@+id/txttambahmeja"
+
+        >
+
+    </EditText>
+
+        <TextView
+            android:id="@+id/fotomeja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtjenismeja"
+            android:text="Foto Meja:"
+            android:textColor="@color/defaults"
+            android:layout_centerHorizontal="true"
+            >
+
+        </TextView>
+
+     <ImageView
+         android:id="@+id/ivtambahmeja"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_below="@+id/fotomeja"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="5dp"
+         android:background="@color/colorPrimaryDark"
+         >
+
+     </ImageView>
+
+        <Button
+            android:id="@+id/btntambahmeja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivtambahmeja"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_style"
+            android:text="Konfirmasi"
+            android:textColor="#ffffff">
+
+        </Button>
+
+    </RelativeLayout>
+</RelativeLayout>

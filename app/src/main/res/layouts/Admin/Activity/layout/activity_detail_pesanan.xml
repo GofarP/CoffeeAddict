@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Admin.DetailPesananActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvdetailpesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnserahpesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Serahkan pesanan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/white"
+        android:background="#2DCC70"
+        android:layout_above="@+id/btncetakstruk"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btncetakstruk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Cetak Struk"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/white"
+        android:background="@color/defaults"
+        android:layout_above="@+id/cvdetailtotal"
+        >
+
+    </Button>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvdetailtotal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lbltotaldetailpesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.0"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/lbldiskontotaldetailpesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.0"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

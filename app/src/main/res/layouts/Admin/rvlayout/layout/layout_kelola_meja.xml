@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:strokeColor="@color/defaults"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:strokeWidth="2dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/ivkelolameja"
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/lblnomeja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="25dp"
+                    android:text="no meja"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ivkelolameja"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbljenismeja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ivkelolameja"
+                    android:layout_below="@+id/lblnomeja"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="jenismeja"
+                    android:textColor="@android:color/black"
+                    >
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblidmeja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btneditmeja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/defaults"
+                android:text="Edit Meja"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btndeletemeja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#EA001C"
+                android:text="Hapus Meja"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

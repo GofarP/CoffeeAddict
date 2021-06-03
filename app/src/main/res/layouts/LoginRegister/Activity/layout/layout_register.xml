@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Daftar Akun"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtemailregister"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                style="@style/modifiedEditText"
+                android:textColorHint="#808080"
+                android:background="@drawable/et_style"
+                android:hint="Email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtusernameregister"
+                style="@style/modifiedEditText"
+                android:textColorHint="#808080"
+                android:background="@drawable/et_style"
+                android:hint="Username"
+                >
+
+            </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtnotelpregister"
+            style="@style/modifiedEditText"
+            android:textColorHint="#808080"
+            android:background="@drawable/et_style"
+            android:hint="No telepon"
+            >
+
+        </EditText>
+
+
+            <EditText
+                android:id="@+id/txtpasswordregister"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/et_style"
+                style="@style/modifiedEditText"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="#808080"
+                android:hint="Password"/>
+
+
+            <EditText
+                android:id="@+id/txtconfirmpasswordregister"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:hint="Konfirmasi Password"
+                style="@style/modifiedEditText"
+                android:textColorHint="#808080"
+                android:background="@drawable/et_style"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_marginTop="20dp"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/lbllogin"
+            style="@style/parent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:text="Login"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

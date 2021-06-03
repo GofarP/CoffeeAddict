@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ui.main.Admin.PlaceholderFragmentMenu">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/defaults"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/namamenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tambah Menu"
+                        android:textColor="@color/defaults"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/namamenu"
+                        android:layout_marginTop="20dp"
+                        android:text="Nama menu"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txtnamamenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/nama"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan Nama Makanan/Minuman"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/jenis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtnamamenu"
+                        android:layout_marginTop="10dp"
+                        android:text="Jenis"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <Spinner
+                        android:id="@+id/spnjenis"
+                        android:layout_below="@+id/jenis"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:layout_height="?attr/dropdownListPreferredItemHeight"
+                        style="@style/spinner_style"
+
+                        >
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textSize="17sp"
+                        android:textColor="@color/defaults"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/spnjenis"
+                        ></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spnstatus"
+                        android:layout_marginTop="5dp"
+                        style="@style/spinner_style"
+                        android:layout_below="@+id/status"
+                        android:layout_height="?attr/dropdownListPreferredItemHeight"
+                        >
+
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/harga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spnstatus"
+                        android:layout_marginTop="10dp"
+                        android:text="Harga"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txtharga"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/harga"
+                        android:hint="Masukkan harga"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtharga"
+                        android:layout_marginTop="10dp"
+                        android:text="Stock"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp"
+                        >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtstock"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/stock"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:inputType="number"
+                        android:textSize="16sp"/>
+
+
+                    <TextView
+                        android:id="@+id/deskripsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtstock"
+                        android:text="Deskripsi Menu"
+                        android:textSize="17sp"
+                        android:textColor="@color/defaults"
+                        android:layout_marginTop="10dp"
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtdeskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/deskripsi"
+                        android:hint="Deskripsi menu"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:inputType="textMultiLine"
+                        android:textSize="16sp"
+                        android:scrollbars="vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/gambarmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gambar Menu"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/txtdeskripsi"
+                        android:layout_marginTop="10dp"
+                        ></TextView>
+
+                    <ImageView
+                        android:id="@+id/ivuploadmenu"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/gambarmenu"
+                        android:layout_marginTop="10dp"
+                        >
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnaddmenu"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="Tambah menu"
+                android:textColor="#ffffff"
+                android:layout_gravity="bottom"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

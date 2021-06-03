@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.gofar.anodais"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src/main/res',
+                        'src/main/res/layouts/customer/layout',
+                        'src/main/res/layouts/com.gofar.anodais.Adapter.Admin/layout',
+                        'src/main/res/layouts/com.gofar.anodais.Adapter.Admin/layout/Activity',
+                        'src/main/res/layouts/Customer', 'src/main/res/LoginRegister', 'src/main/res/layouts/com.gofar.anodais.Adapter.Admin', 'src/main/res/layouts/LoginRegister', 'src/main/res/layouts/com.gofar.anodais.Adapter.Admin/Activity', 'src/main/res/layouts/com.gofar.anodais.Adapter.Admin/Fragment', 'src/main/res/layouts/com.gofar.anodais.Adapter.Admin/popup', 'src/main/res/layouts/com.gofar.anodais.Adapter.Admin/rv_layout', 'src/main/res/layouts/Customer/Activity', 'src/main/res/layouts/Customer/Fragment', 'src/main/res/Customer/rvlayout', 'src/main/res/layouts/Customer/rvlayout', 'src/main/res/LoginRegister/Activity', 'src/main/res/layouts/LoginRegister/Activity', 'src/main/res/layouts/template', 'src/main/res/layouts/rvlayout', 'src/main/res/layouts/Admin/rvlayout', 'src/main/res/layouts/Admin/Activity', 'src/main/res/layouts/Admin/Fragment', 'src/main/res/layouts/Admin/popup', 'src/main/res/layouts/Customer/popup'
+
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.github.jkwiecien:EasyImage:2.1.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.tejpratap46:PDFCreatorAndroid:2.2'
+
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

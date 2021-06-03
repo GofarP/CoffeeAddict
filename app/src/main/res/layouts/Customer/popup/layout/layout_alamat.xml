@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rltopalamat"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/defaults"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tambah Alamat"
+            android:textColor="#ffffff"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rltopalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Note: Pengiriman Maksimal 3km"
+            android:textColor="@android:color/black"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/txttambahalamat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/note"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_style"
+            android:hint="Masukkan Alamat Anda "
+            android:inputType="text">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btntambahalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttambahalamat"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_style"
+            android:text="Tambah Alamat"
+            android:textColor="#ffffff">
+
+        </Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>

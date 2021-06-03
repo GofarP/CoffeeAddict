@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rltopcatatan"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/defaults"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Catatan Pembelian"
+            android:textColor="#ffffff"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rltopcatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <EditText
+            android:id="@+id/txttambahcatatan"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/et_style"
+            android:hint="Catatan Pembelian"
+            android:inputType="textMultiLine">
+
+    </EditText>
+
+        <Button
+            android:id="@+id/btntambahcatatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttambahcatatan"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_style"
+            android:text="Tambah Catatan"
+            android:textColor="#ffffff">
+
+        </Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>

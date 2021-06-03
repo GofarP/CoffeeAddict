@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/defaults"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Meja:"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblnomejapesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/namapelangganpesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pelanggan:"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/defaults"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblnamapelangganpesan"
+                    android:layout_toRightOf="@+id/namapelangganpesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/defaults"
+
+                    android:text="..."
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/sewatanggalpesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/namapelangganpesan"
+                    android:text="Sewa Tanggal:"
+                    android:textSize="17dp"
+                    android:textColor="@color/defaults"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lbltglsewapesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sewatanggalpesan"
+                    android:layout_below="@+id/lblnamapelangganpesan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="..."
+                    android:textColor="@color/defaults"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/notelppesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/lbltglsewapesan"
+                    android:text="No Telpon:"
+                    android:textSize="17dp"
+                    android:textColor="@color/defaults"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblnotelppesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbltglsewapesan"
+                    android:layout_toRightOf="@+id/notelppesan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="..."
+                    android:textColor="@color/defaults"
+                    >
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/btncekpesan"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblnotelppesan"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cek Pesanan"
+                    android:textColor="@android:color/white"
+                    android:background="@color/defaults"
+                    >
+                </Button>
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

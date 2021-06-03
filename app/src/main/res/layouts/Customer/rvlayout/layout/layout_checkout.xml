@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/defaults"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        app:cardElevation="3dp"
+        app:strokeWidth="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/ivcheckout"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    >
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/lblcheckoutnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:maxLength = "12"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/black"
+                    >
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga:"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/lblcheckoutharga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="Rp.0000"
+                        android:textColor="@android:color/black"
+                         android:textStyle="bold"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah:"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/lblcheckoutjumlah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="123456"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        >
+                    </TextView>
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="0dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btnbatalcheckout"
+                        android:text="Batal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:background="@android:color/holo_red_dark">
+
+                    </Button>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="subtotal:"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/lblcheckoutsubtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456"
+                        android:layout_marginLeft="7dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="10dp"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

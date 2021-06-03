@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Customer.CustomerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:paddingBottom="20dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <FrameLayout
+            android:id="@+id/flwave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_wave"
+            android:fitsSystemWindows="true"
+            >
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llwave"
+            android:layout_below="@id/flwave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_home_curve"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/llwave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvdelivery"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/delivery"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="944dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Pesan Makanan"
+                            android:textColor="@color/defaults"
+                            android:textSize="17dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Pesan makanan dari rumah \nlangsung Secara Online">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvmeja"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="10dp"
+                app:strokeWidth="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/table"
+                        >
+                    </ImageView>
+
+                <LinearLayout
+                    android:layout_width="944dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Pesan Meja"
+                        android:textColor="@color/defaults"
+                        android:textSize="17dp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Pesan Meja Untuk Satu Hari\nyang akan datang"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvkeranjang"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cart"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="944dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Keranjang Anda"
+                            android:textColor="@color/defaults"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Lihat daftar pesanan anda"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvdaftarpengajuanmeja"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/list_meja"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="944dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Daftar Pengajuan Meja"
+                            android:textColor="@color/defaults"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Daftar meja yang menunggu\n persetujuan"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvdaftarpesananmeja"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/list_meja"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="944dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Daftar Pesanan Meja"
+                            android:textColor="@color/defaults"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Daftar meja yang sudah disetujui"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvnotifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/notif"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="944dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Notifikasi"
+                            android:textColor="@color/defaults"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Cek Notifikasi anda untuk \n Pemberitahuan Tervaru"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvtransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/payment"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="944dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Transaksi"
+                            android:textColor="@color/defaults"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Cek tranaksi anda"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

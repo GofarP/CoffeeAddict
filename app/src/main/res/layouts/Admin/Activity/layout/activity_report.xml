@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Admin.ReportActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/defaults"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/namamenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Laporan menu"
+                        android:textColor="@color/defaults"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/namamenu"
+                        android:layout_marginTop="20dp"
+                        android:text="ID Menu:"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txtreportidmenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/nama"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan ID Menuu"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llradiobuttonmenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtreportidmenu"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <RadioGroup
+                            android:id="@+id/rgreportmenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                        <RadioButton
+                            android:id="@+id/rbcetakmenusemua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cetak Semua"
+                            android:checked="true"
+                            >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbcetakmenuid"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cetak Berdasaran ID"
+                            >
+                        </RadioButton>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btncetakreportmenu"
+                        android:layout_below="@+id/llradiobuttonmenu"
+                        android:layout_marginTop="20dp"
+                        android:text="Cetk Laporan"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/defaults"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/namatransaksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Laporan Transaksi"
+                        android:textColor="@color/defaults"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idtransaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/namatransaksi"
+                        android:layout_marginTop="20dp"
+                        android:text="ID Menu:"
+                        android:textColor="@color/defaults"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/txtreportidtransaksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/idtransaksi"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_style"
+                        android:hint="Masukkan ID Transaksi"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="20"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llradiobuttontransaksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtreportidtransaksi"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        >
+
+                        <RadioGroup
+                            android:id="@+id/rgreporttransaksi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/rbcetaktransaksisemua"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cetak Semua"
+                                android:checked="true"
+                                >
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rbcetaktransaksiid"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cetak Dgn ID"
+                                >
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rbcetaktransaksibulan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cetak Dgn Bulan"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center_horizontal"
+                                >
+                            </RadioButton>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llspinnertransaksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llradiobuttontransaksi"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        >
+
+                        <Spinner
+                            android:id="@+id/spnbulan"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                            android:layout_height="?attr/dropdownListPreferredItemHeight"
+                            style="@style/spinner_style"
+                            >
+                        </Spinner>
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btncetakreporttransaksi"
+                        android:layout_below="@+id/llspinnertransaksi"
+                        android:layout_marginTop="20dp"
+                        android:text="Cetak Laporan"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

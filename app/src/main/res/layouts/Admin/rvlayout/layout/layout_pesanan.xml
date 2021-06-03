@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/defaults"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID Pesanan:"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblidpesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/namapelangganpesan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Nama Pelanggan:"
+                   android:textSize="17dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/defaults"
+                   >
+               </TextView>
+
+               <TextView
+                   android:id="@+id/lblnamapelangganpesan"
+                   android:layout_toRightOf="@+id/namapelangganpesan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="17dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/defaults"
+
+                   android:text="..."
+                   >
+               </TextView>
+
+               <TextView
+                   android:layout_marginLeft="10dp"
+                   android:id="@+id/alamatpelangganpesan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/namapelangganpesan"
+                   android:text="Alamat:"
+                   android:textSize="17dp"
+                   android:textColor="@color/defaults"
+                   >
+               </TextView>
+
+               <TextView
+                   android:id="@+id/lblalamatpelangganpesanan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/alamatpelangganpesan"
+                   android:layout_below="@+id/lblnamapelangganpesan"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="17dp"
+                   android:text="..."
+                   android:textColor="@color/defaults"
+                   >
+
+               </TextView>
+
+               <TextView
+                   android:layout_marginLeft="10dp"
+                   android:id="@+id/notelppelangganpesan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/lblalamatpelangganpesanan"
+                   android:text="No Telpon:"
+                   android:textSize="17dp"
+                   android:textColor="@color/defaults"
+                   >
+               </TextView>
+
+               <TextView
+                   android:id="@+id/lblnotelppelangganpesanan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/lblalamatpelangganpesanan"
+                   android:layout_toRightOf="@+id/notelppelangganpesan"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="17dp"
+                   android:text="..."
+                   android:textColor="@color/defaults"
+                   >
+
+               </TextView>
+
+
+               <TextView
+                   android:id="@+id/jumlahpesanan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/notelppelangganpesan"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="17dp"
+                   android:text="Jumlah:"
+                   android:textColor="@color/defaults"
+                   >
+
+               </TextView>
+
+
+               <TextView
+                   android:id="@+id/lbljumlahpesanan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="..."
+                   android:textSize="17dp"
+                   android:layout_toRightOf="@+id/jumlahpesanan"
+                   android:layout_below="@+id/lblnotelppelangganpesanan"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textColor="@color/defaults"
+                   >
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/totalpesanan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Total:"
+                   android:layout_below="@+id/jumlahpesanan"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="17dp"
+                   android:textColor="@color/defaults"
+                   >
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/lbltotalpesanan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/alamatpelangganpesan"
+                   android:layout_below="@+id/lbljumlahpesanan"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="17dp"
+                   android:text="..."
+                   android:textColor="@color/defaults"
+                   >
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/statuspesanan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Status:"
+                   android:layout_below="@+id/totalpesanan"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="17dp"
+                   android:textColor="@color/defaults"
+                   >
+
+               </TextView>
+
+               <Spinner
+                   android:id="@+id/spnstatuspesanan"
+                   style="@style/spinner_style"
+                   android:layout_width="301dp"
+                   android:layout_height="30dp"
+                   android:layout_below="@+id/lbltotalpesanan"
+                   android:layout_marginLeft="17dp"
+                   android:layout_marginTop="5dp"
+
+                   android:layout_toRightOf="@+id/statuspesanan"></Spinner>
+
+               <Button
+                   android:id="@+id/btncekpesan"
+                   android:layout_width="match_parent"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/spnstatuspesanan"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="10dp"
+                   android:text="Cek Pesanan"
+                   android:textColor="@android:color/white"
+                   android:background="@color/defaults"
+                   >
+               </Button>
+
+               <Button
+                   android:id="@+id/btnhapuspesanan"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/btncekpesan"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@android:color/holo_red_dark"
+                   android:text="Hapus Pesanan"
+                   android:textColor="@android:color/white"
+                   >
+
+               </Button>
+
+
+           </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Coffee Addict</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="tab_menu_text_1">Tambah Menu</string>
+    <string name="tab_menu_text_2">Makanan</string>
+    <string name="tab_menu_text_3">Minuman</string>
+
+    <string name="title_activity_reservasi">ReservasiActivity</string>
+    <string name="tab_reservasi_text_1">Tambah Meja</string>
+    <string name="tab_reservasi_text_2">Daftar Reservasi</string>
+
+    <string name="title_activity_pesan_menu">Pesan Menu</string>
+    <string name="tab_pesan_menu_text_1">Pesan Makanan</string>
+    <string name="tab_pesan_menu_text_2">Pesan Minuman</string>
+
+
+    <string name="title_activity_keranjang">KeranjangActivity</string>
+    <string name="tab_keranjang_1">Keranjang</string>
+    <string name="tab_keranjang_2">Di beli</string>
+
+    <string name="title_activity_pemberitahuan">PemberitahuanActivity</string>
+    <string name="tab_notif_1">Pembatalan</string>
+    <string name="tab_notif_2">Pesanan</string>
+    <string name="tab_notif_3">Pesanan Ditempat</string>
+
+
+    <string name="text_generated_file_error">Generated File is null or does not exist!</string>
+
+
+</resources>

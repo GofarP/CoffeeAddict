@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvcheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblcheckouttotal"
+                    android:layout_toRightOf="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.0"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblcheckouttotaldiskon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lblcheckouttotal"
+                    android:text="Rp.0"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:visibility="invisible"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblcheckoutdiskon"
+                    android:layout_toRightOf="@+id/lblcheckouttotaldiskon"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Diskon 10 %"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/notelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Telepon / Wa:"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/total"
+                    android:textColor="@android:color/black"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="081268521938"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/notelp"
+                    android:layout_below="@+id/total"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notelp"
+                    android:text="BCA:"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23115663"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@id/bca"
+                    android:layout_below="@id/notelp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

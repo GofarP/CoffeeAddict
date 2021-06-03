@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@color/defaults"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/defaults"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Pembatalan Reservasi"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#ffffff"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Id reservasi:"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/lblidreservasibatal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:textColor="#000000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Meja:"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/lblnomejabatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username/ Email:"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/lblusernamebatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Reservasi:"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/lbltglreservasibatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Telepon:"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/lblnotelpreservasibatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnterimabatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="20dp"
+                        android:text="Terima"
+                        app:layout_constraintEnd_toStartOf="@+id/btntolakbatal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btntolakbatal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="7dp"
+                        android:text="Tolak"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btnterimabatal"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </Button>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
